@@ -1,0 +1,35 @@
+@import "base/base";
+@import "components/components";
+@import "layout/layout";
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  min-height: 100%;
+  margin: 0 auto;
+  font-family: $montserrat-font;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.wrapper {
+  margin-left: 6%;
+  margin-right: 6%;
+  width: calc(100% - calc(6% * 2));
+  @include breakpoint(sm-up) {
+    margin-left: 8%;
+    margin-right: 8%;
+    width: calc(100% - calc(8% * 2));
+  }
+  @include breakpoint(md-up) {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+  }
+}
