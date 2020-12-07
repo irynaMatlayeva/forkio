@@ -1,0 +1,34 @@
+{
+  "name": "forkio",
+  "version": "1.0.0",
+  "description": "step project Iryna Matlayeva and Anna Sakhatska",
+  "main": "script.js",
+  "scripts": {
+    "dev": "gulp dev",
+    "build": "gulp build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/irynaMatlayeva/forkio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/irynaMatlayeva/forkio/issues"
+  },
+  "homepage": "https://github.com/irynaMatlayeva/forkio#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.13",
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-clean": "^0.4.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-js-minify": "0.0.3",
+    "gulp-sass": "^4.1.0",
+    "gulp-uglify": "^3.0.2"
+  },
+  "dependencies": {}
+}
