@@ -17,7 +17,7 @@ module.exports = function serve(cb) {
             baseDir: "./",
             build: 'build'
         },
-        browser: "google chrome",
+        browser: "",
         notify: false,
         open: true,
         cors: true

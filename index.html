@@ -11,7 +11,35 @@
     <title>forkio</title>
 </head>
 
-<body>
+<body class="forkio">
+<header class="forkio-header forkio__header">
+    <div class="wrapper">
+        <div class="forkio-header__content">
+
+            <div class="logo">
+                <img class="logo__img" src="./src/images/header/logo.svg" alt="Company logo" >
+                <img class="logo__img--hover" src="./src/images/header/logo-hover.svg" alt="Company logo">
+                <h2 class="logo__title">Forkio</h2>
+            </div>
+
+            <div class="forkio-header__container">
+                <nav class="menu">
+                    <ul class="menu__list">
+                        <li class="menu__item"><a class="menu__link menu__link--active" href="#void">Overview</a></li>
+                        <li class="menu__item"><a class="menu__link" href="#void">About Fork</a></li>
+                        <li class="menu__item"><a class="menu__link" href="#void">Buying Options</a></li>
+                        <li class="menu__item"><a class="menu__link" href="#void">Support</a></li>
+                    </ul>
+                </nav>
+
+                <button class="forkio-header__btn btn" type="button">Buy Now</button>
+                <button class="burger">
+                    <span class="burger__item"></span>
+                </button>
+            </div>
+        </div>
+    </div>
+</header>
 
 
 <script src="./dist/scripts/scripts.min.js"></script>
