@@ -1,0 +1,11 @@
+@import "header";
+@import "menu";
+
+.forkio {
+  &__header {
+    position: relative;
+    min-width: 320px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}

@@ -1,0 +1,38 @@
+.logo {
+  display: flex;
+  align-items: center;
+
+  &:hover .logo__img {
+    display: none;
+  }
+
+  &:hover .logo__img--hover {
+    display: block;
+  }
+
+  &:hover .logo__title {
+    color: $white;
+  }
+
+  &__img {
+    width: 43px;
+    height: 41px;
+
+    &--hover {
+      display: none;
+    }
+  }
+
+  &__title {
+    display: none;
+    transition: color 0.3s linear;
+    @include breakpoint(md-up) {
+      display: block;
+      margin-left: 17px;
+      font-weight: bold;
+      font-size: $font-24;
+      color: $main-color;
+      text-transform: uppercase;
+    }
+  }
+}

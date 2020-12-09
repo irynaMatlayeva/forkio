@@ -1,0 +1,57 @@
+.forkio-header {
+  &__content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 32px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $balticSea;
+
+    @include breakpoint(md-only) {
+      position: absolute;
+      padding: 22px 20px 56px;
+      color: $main-color;
+    }
+    @include breakpoint(lg-only) {
+      display: flex;
+      justify-content: space-between;
+      padding: 30px 80px;
+      background-color: transparent;
+    }
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    min-width: 85%;
+
+    @include breakpoint(md-only) {
+      align-items: center;
+      justify-content: flex-end;
+      min-width: 70%;
+    }
+    @include breakpoint(lg-only) {
+      align-items: center;
+      justify-content: flex-end;
+      min-width: 82%;
+    }
+  }
+
+  &__btn {
+    padding: 9px 21px;
+    min-width: 119px;
+    transition: min-width 0.5s linear;
+
+    @include breakpoint(md-up) {
+      min-width: 145px;
+      font-size: $font-16;
+    }
+
+    @include breakpoint(lg-only) {
+      margin-left: 3vw;
+    }
+  }
+}
