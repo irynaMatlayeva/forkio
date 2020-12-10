@@ -67,8 +67,14 @@
       bottom: 8px;
       width: 100%;
       height: 2px;
+      left: 50%;
+      transform: translate(-50%, 0);
       display: block;
       background-color: #645766;
+
+      @include breakpoint(md-up) {
+        width: 80%;
+      }
     }
   }
 }
