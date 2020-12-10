@@ -1,5 +1,6 @@
 @import "header";
 @import "menu";
+@import "reviews";
 
 .forkio {
   &__header {
@@ -7,5 +8,18 @@
     min-width: 320px;
     max-width: 1200px;
     margin: 0 auto;
+  }
+
+  &__reviews {
+    min-width: 320px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 3vw;
+    background-image: url("../images/reviews/reviews-bg.png");
+   @extend %main-bg-image;
+
+    @include breakpoint(lg-only) {
+      padding: 0 5vw;
+    }
   }
 }

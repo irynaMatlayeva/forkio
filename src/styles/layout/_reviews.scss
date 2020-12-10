@@ -1,0 +1,74 @@
+.forkio-reviews {
+
+  &__heading {
+    padding: 57px 0 53px;
+
+    @include breakpoint(md-only) {
+      padding: 85px 0;
+    }
+
+    @include breakpoint(lg-only) {
+      padding: 108px 0 82px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &__item {
+    padding-bottom: 41px;
+
+    @include breakpoint(md-only) {
+      max-width: 325px;
+      padding-bottom: 58px;
+    }
+
+    @include breakpoint(lg-only) {
+      max-width: 315px;
+      padding-bottom: 108px;
+    }
+  }
+
+  &__content {
+    display: flex;
+    align-items: center;
+    min-height: 65px;
+    margin-bottom: 15px;
+  }
+
+  &__img {
+    margin: 0 auto;
+  }
+
+  &__text {
+    text-align: center;
+    font-family: $lato-font;
+    font-style: italic;
+    font-weight: bold;
+    font-size: $font-16;
+    color: $white;
+    line-height: 1.7;
+  }
+
+  &__desc {
+    position: relative;
+    text-align: center;
+    padding: 6px 0 22px;
+    font-family: $lato-font;
+    font-size: $font-14;
+    color: #A291A5;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 8px;
+      width: 100%;
+      height: 2px;
+      display: block;
+      background-color: #645766;
+    }
+  }
+}

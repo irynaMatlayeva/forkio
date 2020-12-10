@@ -1,0 +1,20 @@
+%heading-text {
+  font-weight: bold;
+  font-size: $font-36;
+  text-transform: uppercase;
+
+  @include breakpoint(md-only) {
+    font-size: $font-42;
+  }
+  @include breakpoint(lg-only) {
+    font-size: $font-48;
+  }
+}
+
+%main-bg-image {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+
