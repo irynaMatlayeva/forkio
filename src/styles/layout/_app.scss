@@ -1,0 +1,60 @@
+.forkio-app {
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 5vw 392px;
+
+    @include breakpoint(md-only) {
+      padding: 100px 5vw 437px;
+    }
+    @include breakpoint(lg-only) {
+      padding: 65px 5vw 424px;
+    }
+  }
+
+  &__title {
+    font-weight: bold;
+    font-size: $font-48;
+    color: $white;
+    padding: 49px 0 19px;
+
+    @include breakpoint(md-only) {
+      font-size: $font-72;
+      padding: 59px 0 19px;
+    }
+
+    @include breakpoint(lg-only) {
+      font-size: $font-82;
+      padding: 65px 0 19px;
+    }
+  }
+
+  &__desc {
+    display: flex;
+    text-align: center;
+    letter-spacing: 1px;
+    font-family: $lato-font;
+    font-size: $font-18;
+    color: $main-color;
+    padding-bottom: 14px;
+
+    @include breakpoint(md-only) {
+      font-size: $font-24;
+    }
+
+    @include breakpoint(lg-only) {
+      font-size: $font-30;
+    }
+  }
+
+  &__text {
+    font-size: $font-14;
+    color: $desc-text-color;
+    text-transform: uppercase;
+
+    @include breakpoint(lg-only) {
+      font-size: $font-16;
+    }
+  }
+}
