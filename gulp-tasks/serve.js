@@ -23,7 +23,7 @@ module.exports = function serve(cb) {
         cors: true
     })
 
-    gulp.watch('src/images/**/*', gulp.series(images, readyReload))
+    gulp.watch('src/images/**/*{gif,png,jpg,svg,webp}', gulp.series(images, readyReload))
     gulp.watch('src/styles/**/*.scss', gulp.series(styles, cb => gulp.src('dist/styles').pipe(server.stream()).on('end', cb)))
     gulp.watch('src/scripts/**/*.js', gulp.series(scripts, readyReload))
 
