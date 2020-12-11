@@ -3,13 +3,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 100px 5vw 392px;
+    min-height: 770px;
+    padding: 100px 5vw 0;
 
     @include breakpoint(md-only) {
-      padding: 100px 5vw 437px;
+      min-height: 850px;
     }
     @include breakpoint(lg-only) {
-      padding: 65px 5vw 424px;
+      min-height: 929px;
     }
   }
 

@@ -2,17 +2,16 @@
   font-style: $font-15;
   font-weight: bold;
   color: $white;
-  background: $main-color;
+  background-color: $main-color;
   border-radius: 40px;
   border: 2px solid transparent;
   outline: none;
-  transition: color 0.5s linear;
+  transition: color 0.5s linear, background-color 0.5s linear;
 
 
   &:hover {
     color: $main-color;
-    background: $white;
+    background-color: $white;
     border: 2px solid $main-color;
   }
 }
-
