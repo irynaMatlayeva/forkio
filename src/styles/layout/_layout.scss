@@ -13,11 +13,10 @@
 
   &__reviews {
     min-width: 320px;
-    max-width: 1200px;
     margin: 0 auto;
     padding: 0 3vw;
     background-image: url("../images/reviews/reviews-bg.png");
-   @extend %main-bg-image;
+    @extend %main-bg-image;
 
     @include breakpoint(lg-only) {
       padding: 0 5vw;
@@ -26,7 +25,6 @@
 
   &__app {
     min-width: 320px;
-    max-width: 1200px;
     margin: 0 auto;
     background-image: url("../images/app/app-bg.png");
     @extend %main-bg-image;

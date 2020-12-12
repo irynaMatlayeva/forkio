@@ -9,6 +9,8 @@
     justify-content: space-between;
     align-items: center;
     background-color: $balticSea;
+    transition: padding 0.2s linear;
+
 
     @include breakpoint(md-only) {
       position: absolute;
@@ -27,6 +29,8 @@
     display: flex;
     justify-content: space-between;
     min-width: 85%;
+    transition: min-width 0.5s linear;
+
 
     @include breakpoint(md-only) {
       align-items: center;
@@ -42,11 +46,10 @@
 
   &__btn {
     padding: 9px 21px;
-    min-width: 119px;
-    transition: min-width 0.5s linear;
+    transition: padding 0.5s linear;
 
     @include breakpoint(md-up) {
-      min-width: 145px;
+      padding: 9px 34px;
       font-size: $font-16;
     }
 
