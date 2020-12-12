@@ -20,6 +20,7 @@
 
   &__item {
     padding-bottom: 41px;
+    transition: max-width 0.5s linear;
 
     @include breakpoint(md-only) {
       max-width: 45%;
