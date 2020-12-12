@@ -22,12 +22,12 @@
     padding-bottom: 41px;
 
     @include breakpoint(md-only) {
-      max-width: 325px;
+      max-width: 45%;
       padding-bottom: 58px;
     }
 
     @include breakpoint(lg-only) {
-      max-width: 315px;
+      max-width: 28%;
       padding-bottom: 108px;
     }
   }

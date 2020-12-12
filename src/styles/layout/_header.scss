@@ -42,11 +42,10 @@
 
   &__btn {
     padding: 9px 21px;
-    min-width: 119px;
-    transition: min-width 0.5s linear;
+    transition: padding 0.5s linear;
 
     @include breakpoint(md-up) {
-      min-width: 145px;
+      padding: 9px 34px;
       font-size: $font-16;
     }
 
