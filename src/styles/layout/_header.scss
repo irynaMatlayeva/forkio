@@ -11,7 +11,6 @@
     background-color: $balticSea;
     transition: padding 0.2s linear;
 
-
     @include breakpoint(md-only) {
       position: absolute;
       padding: 22px 20px 56px;
