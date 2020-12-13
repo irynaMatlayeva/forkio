@@ -2,32 +2,34 @@
 @import "menu";
 @import "reviews";
 @import "app";
-
+@import "editor";
 .forkio {
-  &__header {
-    position: relative;
-    min-width: 320px;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-
-  &__reviews {
-    position: relative;
-    min-width: 320px;
-    margin: 0 auto;
-    padding: 0 3vw;
-    background-image: url("../images/reviews/reviews-bg.png");
-    @extend %main-bg-image;
-
-    @include breakpoint(lg-only) {
-      padding: 0 5vw;
+    &__header {
+        position: relative;
+        min-width: 320px;
+        max-width: 1200px;
+        margin: 0 auto;
     }
-  }
-
-  &__app {
-    min-width: 320px;
-    margin: 0 auto;
-    background-image: url("../images/app/app-bg.png");
-    @extend %main-bg-image;
-  }
+    &__reviews {
+        position: relative;
+        min-width: 320px;
+        margin: 0 auto;
+        padding: 0 3vw;
+        background-image: url("../images/reviews/reviews-bg.png");
+        @extend %main-bg-image;
+        @include breakpoint(lg-only) {
+            padding: 0 5vw;
+        }
+    }
+    &__app {
+        min-width: 320px;
+        margin: 0 auto;
+        background-image: url("../images/app/app-bg.png");
+        @extend %main-bg-image;
+    }
+    &__editor {
+        min-width: 320px;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
 }
