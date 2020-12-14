@@ -3,10 +3,10 @@
         display: grid;
         grid-template-columns: 1fr;
         @include breakpoint(lg-only) {
-            grid-template-columns: minmax(auto, 45%) minmax(auto, 55%);
+            grid-template-columns: minmax(auto, 48%) minmax(auto, 55%);
             grid-template-rows: 1fr 6fr;
             grid-template-areas: "list heading" "list image";
-            grid-column-gap: 50px;
+            grid-column-gap: 25px;
             grid-row-gap: 19px;
             max-width: 1200px;
             margin: 0 auto;
@@ -26,7 +26,7 @@
             text-align: left;
             font-size: $font-48;
             grid-area: heading;
-            padding: 0 10px 0 0;
+            padding: 0;
         }
     }
     &__list {
