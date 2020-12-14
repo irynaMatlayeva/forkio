@@ -3,6 +3,7 @@
 @import "reviews";
 @import "app";
 @import "editor";
+@import "here";
 .forkio {
     &__header {
         position: relative;
@@ -31,5 +32,17 @@
         min-width: 320px;
         max-width: 1200px;
         margin: 0 auto;
+    }
+    &__here {
+        min-width: 320px;
+        margin: 0 auto;
+        padding: 32px 0 10px;
+        @include breakpoint(md-only) {
+            padding: 62px 0 6px;
+        }
+        @include breakpoint(lg-only) {
+            background-color: $main-bgc-color;
+            padding: 100px 0 65px;
+        }
     }
 }
