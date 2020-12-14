@@ -1,0 +1,99 @@
+.forkio-here {
+    &__container {
+        display: grid;
+        grid-template-columns: 1fr;
+        @include breakpoint(lg-only) {
+            grid-template-columns: minmax(auto, 45%) minmax(auto, 55%);
+            grid-template-rows: 1fr 6fr;
+            grid-template-areas: "list heading" "list image";
+            grid-column-gap: 50px;
+            grid-row-gap: 19px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+    }
+    &__heading {
+        font-size: $font-32;
+        font-weight: bold;
+        color: $lavenderPurple;
+        text-align: center;
+        padding: 0 40px 36px;
+        @include breakpoint(md-only) {
+            font-size: $font-42;
+            padding: 0 0 52px;
+        }
+        @include breakpoint(lg-only) {
+            text-align: left;
+            font-size: $font-48;
+            grid-area: heading;
+            padding: 0 10px 0 0;
+        }
+    }
+    &__list {
+        padding: 0 26px;
+        @include breakpoint(md-only) {
+            padding: 0 30px;
+        }
+        @include breakpoint(lg-only) {
+            font-size: $font-48;
+            grid-area: list;
+            padding: 0 0 0 90px;
+        }
+    }
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 42px;
+        @include breakpoint(md-up) {
+            flex-direction: row;
+            padding-bottom: 59px;
+        }
+        @include breakpoint(lg-only) {
+            padding-bottom: 34px;
+        }
+    }
+    &__image-container {
+        @include breakpoint(md-up) {
+            min-width: 134px;
+        }
+    }
+    &__img {
+        object-fit: cover;
+    }
+    &__title {
+        color: $mineShaft;
+        font-size: $font-16;
+        padding: 15px 0;
+        text-align: center;
+        @include breakpoint(md-up) {
+            text-align: justify;
+            padding-bottom: 16px;
+        }
+        @include breakpoint(lg-only) {
+            padding-bottom: 17px;
+        }
+    }
+    &__text {
+        text-align: center;
+        color: $osloGray;
+        font-size: $font-14;
+        @include breakpoint(md-up) {
+            display: flex;
+            text-align: left;
+        }
+    }
+    &__main-image {
+        display: inline-grid;
+        justify-items: end;
+        @include breakpoint(lg-only) {
+            grid-area: image;
+        }
+    }
+    &__image {
+        @include breakpoint(lg-only) {
+            display: block;
+            width: 100%;
+        }
+    }
+}

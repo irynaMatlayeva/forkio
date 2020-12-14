@@ -7,30 +7,33 @@
     &__btn {
         align-self: center;
         font-size: $font-18;
-        min-width: 290px;
         position: relative;
-        top: -15px;
-        @include breakpoint(md-only) {
-            max-width: 390px;
-        }
-        @include breakpoint(lg-only) {
-            max-width: 390px;
+        padding: 13px 29px;
+        top: -50%;
+        transform: translate( 0, -50%);
+        @include breakpoint(md-up) {
+            padding: 23px 61px;
         }
     }
     &__signature {
         font-size: $font-14;
         color: $osloGray;
-        margin: 3px;
+        padding-bottom: 13px;
         text-align: center;
+        @include breakpoint(md-up) {
+            padding-bottom: 19px;
+        }
     }
     &__content {
         align-items: center;
-        margin-top: 60px;
+        padding-bottom: 36px;
         @include breakpoint(md-only) {
             max-width: 689px;
+            padding-bottom: 24px;
         }
         @include breakpoint(lg-only) {
             max-width: 906px;
+            padding-bottom: 13px;
         }
     }
     &__title {
@@ -71,38 +74,5 @@
         @include breakpoint(lg-only) {
             margin-bottom: 70px;
         }
-    }
-    &__button {
-        display: flex;
-        align-items: center;
-        border: 1px solid #D3D3D3;
-        border-radius: 3px;
-        cursor: pointer;
-        margin: 5px;
-    }
-    &__name {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        min-width: 70px;
-        font-size: 10px;
-        font-weight: bold;
-        text-transform: capitalize;
-        background: #F1F1F1;
-        border-right: 1px solid #D3D3D3;
-        box-shadow: inset rgba(100, 100, 111, 0.2) 0px -11px 14px 0px;
-        padding: 5px;
-    }
-    &__number {
-        min-width: 45px;
-        font-size: 10px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-weight: bold;
-    }
-    &__fork {
-        height: 13px;
-        padding-right: 3px;
     }
 }

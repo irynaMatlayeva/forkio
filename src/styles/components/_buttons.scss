@@ -1,17 +1,51 @@
 .btn {
-  font-style: $font-15;
-  font-weight: bold;
-  color: $white;
-  background-color: $main-color;
-  border-radius: 40px;
-  border: 2px solid transparent;
-  outline: none;
-  transition: color 0.5s linear, background-color 0.5s linear;
+    font-style: $font-15;
+    font-weight: bold;
+    color: $white;
+    background-color: $main-color;
+    border-radius: 40px;
+    border: 2px solid transparent;
+    outline: none;
+    transition: color 0.5s linear, background-color 0.5s linear;
+    &:hover {
+        color: $main-color;
+        background-color: $white;
+        border: 2px solid $main-color;
+    }
+}
 
-
-  &:hover {
-    color: $main-color;
-    background-color: $white;
-    border: 2px solid $main-color;
-  }
+.github {
+    &__button {
+        display: flex;
+        align-items: center;
+        border: 1px solid $alto;
+        border-radius: 3px;
+        cursor: pointer;
+        margin: 5px;
+    }
+    &__name {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 70px;
+        font-size: 10px;
+        font-weight: bold;
+        text-transform: capitalize;
+        background: #F1F1F1;
+        border-right: 1px solid $alto;
+        box-shadow: inset rgba(100, 100, 111, 0.2) 0px -11px 14px 0px;
+        padding: 5px;
+    }
+    &__number {
+        min-width: 45px;
+        font-size: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+    }
+    &__fork {
+        height: 13px;
+        padding-right: 3px;
+    }
 }
