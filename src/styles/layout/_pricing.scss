@@ -33,6 +33,13 @@
   &__container {
     display: flex;
     justify-content: center;
+  
+    @include breakpoint(md-only) {
+     		max-width:89%;
+    }
+    @include breakpoint(lg-only) {
+     margin: 0 auto;
+    }
   }
 
   &__list {
