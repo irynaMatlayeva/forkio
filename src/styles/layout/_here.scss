@@ -4,7 +4,6 @@
         grid-template-columns: 1fr;
         @include breakpoint(lg-only) {
             grid-template-columns: minmax(auto, 48%) minmax(auto, 52%);
-            grid-template-rows: 1fr 6fr;
             grid-template-areas: "list heading" "list image";
             grid-column-gap: 25px;
             grid-row-gap: 19px;
