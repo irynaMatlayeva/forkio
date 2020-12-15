@@ -1,18 +1,4 @@
 .forkio-reviews {
-    &::after {
-        content: "";
-        position: absolute;
-        width: 87%;
-        height: 2px;
-        left: 50%;
-        bottom: 8px;
-        transform: translate(-50%, 0);
-        display: block;
-        background-color: #645766;
-        @include breakpoint(md-up) {
-            max-width: 780px;
-        }
-    }
     &__heading {
         padding: 57px 0 53px;
         @include breakpoint(md-only) {

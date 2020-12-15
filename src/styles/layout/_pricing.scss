@@ -1,4 +1,19 @@
 .forkio-pricing {
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 87%;
+    height: 2px;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%, 0);
+    display: block;
+    background-color: #645766;
+    @include breakpoint(md-up) {
+      max-width: 780px;
+    }
+  }
   &__heading {
     font-size: $font-28;
     color: white;
@@ -18,7 +33,6 @@
   &__container {
     display: flex;
     justify-content: center;
-    max-width: 1200px;
   }
 
   &__list {
@@ -35,10 +49,10 @@
 
     @include breakpoint(lg-only) {
       display: grid;
+      grid-template-columns: 1fr 1fr 1.2fr 1fr;
       justify-content: center;
       align-items: center;
       column-gap: 15px;
-      grid-template-columns: 1fr 1fr 1.2fr 1fr;
     }
   }
 

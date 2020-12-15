@@ -14,19 +14,6 @@
     margin: 0 auto;
   }
 
-  &__reviews {
-    position: relative;
-    top: 10px;
-    min-width: 320px;
-    margin: 0 auto;
-    padding: 0 3vw;
-    background-image: url("../images/reviews/reviews-bg.png");
-    @extend %main-bg-image;
-    @include breakpoint(lg-only) {
-      padding: 0 5vw;
-    }
-  }
-
   &__app {
     min-width: 320px;
     margin: 0 auto;
@@ -53,7 +40,20 @@
     }
   }
 
+  &__reviews {
+    min-width: 320px;
+    margin: 0 auto;
+    padding: 0 3vw;
+    background-image: url("../images/reviews/reviews-bg.png");
+    @extend %main-bg-image;
+    @include breakpoint(lg-only) {
+      padding: 0 5vw;
+    }
+  }
+
   &__pricing {
+    position: relative;
+    bottom: 14px;
     margin: 0 auto;
     padding: 14px 0;
     background-image: url(../images/pricing/Layer21.png);
