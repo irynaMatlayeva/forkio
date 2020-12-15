@@ -1,80 +1,67 @@
 .forkio-reviews {
-
-  &::after {
-    content: "";
-    position: absolute;
-    width: 87%;
-    height: 2px;
-    left: 50%;
-    bottom: 8px;
-    transform: translate(-50%, 0);
-    display: block;
-    background-color: #645766;
-
-    @include breakpoint(md-up) {
-      max-width: 780px;
+    &::after {
+        content: "";
+        position: absolute;
+        width: 87%;
+        height: 2px;
+        left: 50%;
+        bottom: 8px;
+        transform: translate(-50%, 0);
+        display: block;
+        background-color: #645766;
+        @include breakpoint(md-up) {
+            max-width: 780px;
+        }
     }
-  }
-
-  &__heading {
-    padding: 57px 0 53px;
-
-    @include breakpoint(md-only) {
-      padding: 85px 0;
+    &__heading {
+        padding: 57px 0 53px;
+        @include breakpoint(md-only) {
+            padding: 85px 0;
+        }
+        @include breakpoint(lg-only) {
+            padding: 108px 0 82px;
+        }
     }
-
-    @include breakpoint(lg-only) {
-      padding: 108px 0 82px;
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
     }
-  }
-
-  &__list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-
-  &__item {
-    padding-bottom: 41px;
-    transition: max-width 0.5s linear;
-
-    @include breakpoint(md-only) {
-      max-width: 45%;
-      padding-bottom: 58px;
+    &__item {
+        padding-bottom: 41px;
+        transition: max-width 0.5s linear;
+        @include breakpoint(md-only) {
+            max-width: 45%;
+            padding-bottom: 58px;
+        }
+        @include breakpoint(lg-only) {
+            max-width: 28%;
+            padding-bottom: 108px;
+        }
     }
-
-    @include breakpoint(lg-only) {
-      max-width: 28%;
-      padding-bottom: 108px;
+    &__content {
+        display: flex;
+        align-items: center;
+        min-height: 65px;
+        margin-bottom: 15px;
     }
-  }
-
-  &__content {
-    display: flex;
-    align-items: center;
-    min-height: 65px;
-    margin-bottom: 15px;
-  }
-
-  &__img {
-    margin: 0 auto;
-  }
-
-  &__text {
-    text-align: center;
-    font-family: $lato-font;
-    font-style: italic;
-    font-weight: bold;
-    font-size: $font-16;
-    color: $white;
-    line-height: 1.7;
-  }
-
-  &__desc {
-    text-align: center;
-    padding: 6px 0 36px;
-    font-family: $lato-font;
-    font-size: $font-14;
-    color: #A291A5;
-  }
+    &__img {
+        margin: 0 auto;
+    }
+    &__text {
+        text-align: center;
+        font-family: $lato-font;
+        font-style: italic;
+        font-weight: bold;
+        font-size: $font-16;
+        color: $white;
+        line-height: 1.7;
+    }
+    &__desc {
+        text-align: center;
+        padding: 6px 0 36px;
+        font-family: $lato-font;
+        font-size: $font-14;
+        color: #A291A5;
+    }
 }

@@ -4,6 +4,7 @@
 @import "app";
 @import "editor";
 @import "here";
+@import "pricing";
 .forkio {
     &__header {
         position: relative;
@@ -43,6 +44,18 @@
         @include breakpoint(lg-only) {
             background-color: $main-bgc-color;
             padding: 100px 0 65px;
+        }
+    }
+    &__pricing {
+        margin: 0 auto;
+        padding: 14px 0;
+        background-image: url(../images/pricing/Layer21.png);
+        @extend %main-bg-image;
+        @include breakpoint(md-only) {
+            padding: 90px 0;
+        }
+        @include breakpoint(lg-only) {
+            padding: 114px 0 73px;
         }
     }
 }

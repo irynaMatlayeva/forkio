@@ -3,7 +3,7 @@
         display: grid;
         grid-template-columns: 1fr;
         @include breakpoint(lg-only) {
-            grid-template-columns: minmax(auto, 48%) minmax(auto, 55%);
+            grid-template-columns: minmax(auto, 48%) minmax(auto, 52%);
             grid-template-rows: 1fr 6fr;
             grid-template-areas: "list heading" "list image";
             grid-column-gap: 25px;
@@ -37,7 +37,6 @@
         @include breakpoint(lg-only) {
             font-size: $font-48;
             grid-area: list;
-            padding: 0 0 0 90px;
         }
     }
     &__item {
