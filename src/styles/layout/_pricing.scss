@@ -14,6 +14,7 @@
       max-width: 780px;
     }
   }
+
   &__heading {
     font-size: $font-28;
     color: white;
@@ -33,12 +34,13 @@
   &__container {
     display: flex;
     justify-content: center;
-  
+
     @include breakpoint(md-only) {
-     		max-width:89%;
+      margin: 0 auto;
+      max-width: 89%;
     }
     @include breakpoint(lg-only) {
-     margin: 0 auto;
+      margin: 0 auto;
     }
   }
 
