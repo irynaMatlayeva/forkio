@@ -5,57 +5,64 @@
 @import "editor";
 @import "here";
 @import "pricing";
+
 .forkio {
-    &__header {
-        position: relative;
-        min-width: 320px;
-        max-width: 1200px;
-        margin: 0 auto;
+  &__header {
+    position: relative;
+    min-width: 320px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  &__reviews {
+    position: relative;
+    top: 10px;
+    min-width: 320px;
+    margin: 0 auto;
+    padding: 0 3vw;
+    background-image: url("../images/reviews/reviews-bg.png");
+    @extend %main-bg-image;
+    @include breakpoint(lg-only) {
+      padding: 0 5vw;
     }
-    &__reviews {
-        position: relative;
-        min-width: 320px;
-        margin: 0 auto;
-        padding: 0 3vw;
-        background-image: url("../images/reviews/reviews-bg.png");
-        @extend %main-bg-image;
-        @include breakpoint(lg-only) {
-            padding: 0 5vw;
-        }
+  }
+
+  &__app {
+    min-width: 320px;
+    margin: 0 auto;
+    background-image: url("../images/app/app-bg.png");
+    @extend %main-bg-image;
+  }
+
+  &__editor {
+    min-width: 320px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  &__here {
+    min-width: 320px;
+    margin: 0 auto;
+    padding: 32px 0 10px;
+    @include breakpoint(md-only) {
+      padding: 62px 0 6px;
     }
-    &__app {
-        min-width: 320px;
-        margin: 0 auto;
-        background-image: url("../images/app/app-bg.png");
-        @extend %main-bg-image;
+    @include breakpoint(lg-only) {
+      background-color: $main-bgc-color;
+      padding: 100px 0 65px;
     }
-    &__editor {
-        min-width: 320px;
-        max-width: 1200px;
-        margin: 0 auto;
+  }
+
+  &__pricing {
+    margin: 0 auto;
+    padding: 14px 0;
+    background-image: url(../images/pricing/Layer21.png);
+    @extend %main-bg-image;
+    @include breakpoint(md-only) {
+      padding: 90px 0;
     }
-    &__here {
-        min-width: 320px;
-        margin: 0 auto;
-        padding: 32px 0 10px;
-        @include breakpoint(md-only) {
-            padding: 62px 0 6px;
-        }
-        @include breakpoint(lg-only) {
-            background-color: $main-bgc-color;
-            padding: 100px 0 65px;
-        }
+    @include breakpoint(lg-only) {
+      padding: 114px 0 73px;
     }
-    &__pricing {
-        margin: 0 auto;
-        padding: 14px 0;
-        background-image: url(../images/pricing/Layer21.png);
-        @extend %main-bg-image;
-        @include breakpoint(md-only) {
-            padding: 90px 0;
-        }
-        @include breakpoint(lg-only) {
-            padding: 114px 0 73px;
-        }
-    }
+  }
 }
