@@ -18,22 +18,22 @@
     &__signature {
         font-size: $font-14;
         color: $osloGray;
-        padding-bottom: 13px;
+        margin-bottom: 13px;
         text-align: center;
         @include breakpoint(md-up) {
-            padding-bottom: 19px;
+            margin-bottom: 19px;
         }
     }
     &__content {
         align-items: center;
-        padding-bottom: 36px;
+        margin-bottom: 36px;
         @include breakpoint(md-only) {
             max-width: 689px;
-            padding-bottom: 24px;
+            margin-bottom: 24px;
         }
         @include breakpoint(lg-only) {
             max-width: 906px;
-            padding-bottom: 13px;
+            margin-bottom: 13px;
         }
     }
     &__title {
