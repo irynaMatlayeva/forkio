@@ -14,15 +14,15 @@
         justify-content: space-between;
     }
     &__item {
-        padding-bottom: 41px;
+        margin-bottom: 41px;
         transition: max-width 0.5s linear;
         @include breakpoint(md-only) {
             max-width: 45%;
-            padding-bottom: 58px;
+            margin-bottom: 58px;
         }
         @include breakpoint(lg-only) {
             max-width: 28%;
-            padding-bottom: 108px;
+            margin-bottom: 108px;
         }
     }
     &__content {

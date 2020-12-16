@@ -20,14 +20,14 @@
     color: white;
     font-weight: bold;
     text-align: center;
-    padding-bottom: 32px;
+    margin-bottom: 32px;
     @include breakpoint(md-only) {
       font-size: $font-42;
-      padding-bottom: 39px;
+      margin-bottom: 39px;
     }
     @include breakpoint(lg-only) {
       font-size: $font-48;
-      padding-bottom: 61px;
+      margin-bottom: 61px;
     }
   }
 

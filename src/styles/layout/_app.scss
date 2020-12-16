@@ -18,16 +18,16 @@
     font-weight: bold;
     font-size: $font-48;
     color: $white;
-    padding: 49px 0 19px;
+    margin: 49px 0 19px;
 
     @include breakpoint(md-only) {
       font-size: $font-72;
-      padding: 59px 0 19px;
+      margin: 59px 0 19px;
     }
 
     @include breakpoint(lg-only) {
       font-size: $font-82;
-      padding: 65px 0 19px;
+      margin: 65px 0 19px;
     }
   }
 
@@ -38,7 +38,7 @@
     font-family: $lato-font;
     font-size: $font-18;
     color: $main-color;
-    padding-bottom: 14px;
+    margin-bottom: 14px;
 
     @include breakpoint(md-only) {
       font-size: $font-24;
