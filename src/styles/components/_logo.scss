@@ -4,29 +4,11 @@
   cursor: pointer;
 
   &:hover .logo__img {
-    display: none;
-  }
-
-  &:hover .logo__img--hover {
-    display: block;
-  }
-
-  &:hover .logo__title {
-    color: $white;
-  }
-
-  &__img {
-    width: 43px;
-    height: 41px;
-
-    &--hover {
-      display: none;
-    }
+    filter: brightness(0) invert(1);
   }
 
   &__title {
     display: none;
-    transition: color 0.3s linear;
     @include breakpoint(md-up) {
       display: block;
       margin-left: 17px;
@@ -35,5 +17,9 @@
       color: $main-color;
       text-transform: uppercase;
     }
+  }
+
+  &:hover .logo__title {
+    color: $white;
   }
 }
